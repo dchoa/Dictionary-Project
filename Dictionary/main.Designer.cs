@@ -1,6 +1,6 @@
 ﻿namespace Dictionary
 {
-    partial class fDictionary
+    partial class frmDictionary
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDictionary));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dictionaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,16 +42,19 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gUIEVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbSearch = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btSearch = new System.Windows.Forms.Button();
             this.btOnlineSearch = new System.Windows.Forms.Button();
-            this.lbEngWord = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbMeaning = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btFavourite = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbFamily = new System.Windows.Forms.Label();
+            this.lbMeaning = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbEngWord = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -79,20 +83,22 @@
             // recentToolStripMenuItem
             // 
             this.recentToolStripMenuItem.Name = "recentToolStripMenuItem";
-            this.recentToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.recentToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.recentToolStripMenuItem.Text = "Recent";
             // 
             // favouriteToolStripMenuItem
             // 
             this.favouriteToolStripMenuItem.Name = "favouriteToolStripMenuItem";
-            this.favouriteToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.favouriteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.favouriteToolStripMenuItem.Text = "Favourite";
+            this.favouriteToolStripMenuItem.Click += new System.EventHandler(this.favouriteToolStripMenuItem_Click);
             // 
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -109,6 +115,7 @@
             this.newWordToolStripMenuItem.Name = "newWordToolStripMenuItem";
             this.newWordToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newWordToolStripMenuItem.Text = "New Word";
+            this.newWordToolStripMenuItem.Click += new System.EventHandler(this.newWordToolStripMenuItem_Click);
             // 
             // onlineSearchToolStripMenuItem
             // 
@@ -142,6 +149,7 @@
             this.gUIEVToolStripMenuItem.Name = "gUIEVToolStripMenuItem";
             this.gUIEVToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.gUIEVToolStripMenuItem.Text = "GUI E_V";
+            this.gUIEVToolStripMenuItem.Click += new System.EventHandler(this.gUIEVToolStripMenuItem_Click);
             // 
             // tbSearch
             // 
@@ -150,24 +158,6 @@
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(177, 30);
             this.tbSearch.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(48, 105);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(315, 405);
-            this.panel1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lbFamily);
-            this.panel2.Controls.Add(this.lbMeaning);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.lbEngWord);
-            this.panel2.Location = new System.Drawing.Point(420, 105);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(546, 405);
-            this.panel2.TabIndex = 3;
             // 
             // btSearch
             // 
@@ -187,64 +177,128 @@
             this.btOnlineSearch.Text = "Online Search";
             this.btOnlineSearch.UseVisualStyleBackColor = true;
             // 
-            // lbEngWord
+            // button2
             // 
-            this.lbEngWord.AutoSize = true;
-            this.lbEngWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEngWord.Location = new System.Drawing.Point(60, 14);
-            this.lbEngWord.Name = "lbEngWord";
-            this.lbEngWord.Size = new System.Drawing.Size(94, 25);
-            this.lbEngWord.TabIndex = 0;
-            this.lbEngWord.Text = "Eng word";
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(321, 54);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(42, 39);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label2
+            // btFavourite
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Example:";
+            this.btFavourite.Location = new System.Drawing.Point(852, 61);
+            this.btFavourite.Name = "btFavourite";
+            this.btFavourite.Size = new System.Drawing.Size(114, 31);
+            this.btFavourite.TabIndex = 6;
+            this.btFavourite.Text = "Favourite";
+            this.btFavourite.UseVisualStyleBackColor = true;
+            this.btFavourite.Click += new System.EventHandler(this.btFavourite_Click);
             // 
-            // lbMeaning
+            // richTextBox1
             // 
-            this.lbMeaning.AutoSize = true;
-            this.lbMeaning.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMeaning.Location = new System.Drawing.Point(60, 66);
-            this.lbMeaning.Name = "lbMeaning";
-            this.lbMeaning.Size = new System.Drawing.Size(88, 25);
-            this.lbMeaning.TabIndex = 3;
-            this.lbMeaning.Text = "Meaning";
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.richTextBox1.Location = new System.Drawing.Point(420, 105);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(546, 405);
+            this.richTextBox1.TabIndex = 7;
+            this.richTextBox1.Text = "";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.Color.Fuchsia;
+            this.checkBox1.Image = ((System.Drawing.Image)(resources.GetObject("checkBox1.Image")));
+            this.checkBox1.Location = new System.Drawing.Point(429, 115);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(50, 32);
+            this.checkBox1.TabIndex = 13;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(429, 163);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 32);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // lbFamily
             // 
             this.lbFamily.AutoSize = true;
             this.lbFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFamily.Location = new System.Drawing.Point(60, 172);
+            this.lbFamily.Location = new System.Drawing.Point(499, 265);
             this.lbFamily.Name = "lbFamily";
             this.lbFamily.Size = new System.Drawing.Size(116, 25);
-            this.lbFamily.TabIndex = 4;
+            this.lbFamily.TabIndex = 12;
             this.lbFamily.Text = "Family word";
             // 
-            // fDictionary
+            // lbMeaning
+            // 
+            this.lbMeaning.AutoSize = true;
+            this.lbMeaning.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMeaning.Location = new System.Drawing.Point(499, 170);
+            this.lbMeaning.Name = "lbMeaning";
+            this.lbMeaning.Size = new System.Drawing.Size(94, 25);
+            this.lbMeaning.TabIndex = 11;
+            this.lbMeaning.Text = "Meaning:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(499, 218);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 25);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Example:";
+            // 
+            // lbEngWord
+            // 
+            this.lbEngWord.AutoSize = true;
+            this.lbEngWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEngWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lbEngWord.Location = new System.Drawing.Point(499, 118);
+            this.lbEngWord.Name = "lbEngWord";
+            this.lbEngWord.Size = new System.Drawing.Size(116, 29);
+            this.lbEngWord.TabIndex = 9;
+            this.lbEngWord.Text = "Eng word";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(48, 105);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(314, 405);
+            this.richTextBox2.TabIndex = 14;
+            this.richTextBox2.Text = "";
+            // 
+            // frmDictionary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 559);
+            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbFamily);
+            this.Controls.Add(this.lbMeaning);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbEngWord);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.btFavourite);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btOnlineSearch);
             this.Controls.Add(this.btSearch);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "fDictionary";
+            this.Name = "frmDictionary";
             this.Text = "Dictionary";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,14 +319,18 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gUIEVToolStripMenuItem;
         private System.Windows.Forms.TextBox tbSearch;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btSearch;
         private System.Windows.Forms.Button btOnlineSearch;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btFavourite;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lbFamily;
         private System.Windows.Forms.Label lbMeaning;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbEngWord;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 

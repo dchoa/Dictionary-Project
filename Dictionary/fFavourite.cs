@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Dictionary
 {
-    public partial class fFavourite : Form
+    public partial class frmFavourite : Form
     {
-        public fFavourite()
+        public frmFavourite()
         {
             InitializeComponent();
+        }
+
+        private void btClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

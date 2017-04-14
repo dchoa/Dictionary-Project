@@ -1,1 +1,11 @@
 c:\users\hoaiv\documents\visual studio 2015\Projects\Dictionary\Dictionary\bin\Debug\Dictionary.exe.config
+C:\Users\hoaiv\documents\visual studio 2015\Projects\Dictionary\Dictionary\obj\Debug\Dictionary.csprojResolveAssemblyReference.cache
+C:\Users\hoaiv\documents\visual studio 2015\Projects\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.GenerateResource.Cache
+C:\Users\hoaiv\documents\visual studio 2015\Projects\Dictionary\Dictionary\bin\Debug\Dictionary.exe
+C:\Users\hoaiv\documents\visual studio 2015\Projects\Dictionary\Dictionary\bin\Debug\Dictionary.pdb
+C:\Users\hoaiv\documents\visual studio 2015\Projects\Dictionary\Dictionary\obj\Debug\Dictionary.Properties.Resources.resources
+C:\Users\hoaiv\documents\visual studio 2015\Projects\Dictionary\Dictionary\obj\Debug\Dictionary.exe
+C:\Users\hoaiv\documents\visual studio 2015\Projects\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
+C:\Users\hoaiv\Documents\Visual Studio 2015\Projects\Dictionary\Dictionary\obj\Debug\Dictionary.frmFavourite.resources
+C:\Users\hoaiv\Documents\Visual Studio 2015\Projects\Dictionary\Dictionary\obj\Debug\Dictionary.frmNewword.resources
+C:\Users\hoaiv\Documents\Visual Studio 2015\Projects\Dictionary\Dictionary\obj\Debug\Dictionary.frmDictionary.resources
