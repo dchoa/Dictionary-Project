@@ -62,8 +62,7 @@ namespace Dictionary
                 aboutToolStripMenuItem.Text = "Thông Tin Từ Điển";
                 gUIEVToolStripMenuItem.Text = "GUI V_E";
                 btSearch.Text = "Tra";
-                btOnlineSearch.Text = "Tra từ Online";
-                btFavourite.Text = "Từ Yêu Thích";
+               
             }
             else
             {
@@ -79,9 +78,31 @@ namespace Dictionary
                 aboutToolStripMenuItem.Text = "About";
                 gUIEVToolStripMenuItem.Text = "GUI E_V";
                 btSearch.Text = "Search";
-                btOnlineSearch.Text = "Online Search";
-                btFavourite.Text = "Favourite";
+                
             }
+        }
+
+        private void btIrregularVerbs_Click(object sender, EventArgs e)
+        {
+            frmIrregularVerbs irr = new frmIrregularVerbs();
+            irr.Show();
+        }
+
+        private void irregularVerbsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIrregularVerbs irr = new frmIrregularVerbs();
+            irr.Show();
+        }
+
+        private void btSearch_Click(object sender, EventArgs e)
+        {
+            tabPage2.Show();
+        }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            frmIdioms idiom = new frmIdioms();
+            idiom.Show();
         }
     }
 }
