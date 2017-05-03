@@ -96,13 +96,40 @@ namespace Dictionary
 
         private void btSearch_Click(object sender, EventArgs e)
         {
-            tabPage2.Show();
+            tabPage2.Focus();
         }
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
             frmIdioms idiom = new frmIdioms();
             idiom.Show();
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            pbStarDark.Visible = true;
+            pbStarLight.Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            pbStarLight.Visible = true;
+            pbStarDark.Visible = false;
         }
     }
 }
